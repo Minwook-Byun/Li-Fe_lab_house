@@ -1,0 +1,24 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node-sass": "node-sass",
+    "sass": "node-sass -wr ./styles/main.scss ./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Minwook-Byun/Li-Fe_lab_house.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Minwook-Byun/Li-Fe_lab_house/issues"
+  },
+  "homepage": "https://github.com/Minwook-Byun/Li-Fe_lab_house#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
