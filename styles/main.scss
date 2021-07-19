@@ -1,4 +1,9 @@
-p{
-    display: flex;
-    color: green;
+@import './base/fonts';
+@import './base/reset';
+@import './base/normalize';
+
+p {
+  display: block;
+  color: green;
+  font-family: 'Noto Sans KR', sans-serif;
 }
