@@ -27,9 +27,19 @@ $gutter: 20px;
 $sm-columns: 4;
 $sm-margin: 5px;
 
+$md-breakpoint: 768px;
+$md-columns: 12;
+$md-margin: 30px;
+$md-max-container: 960px;
+
+$lg-breakpoint: 1200px;
+$lg-columns: 12;
+$lg-unit: 75px;
+$lg-max-container: ($lg-unit * $gutter) * $lg-columns;
+
 .container {
   width: 100%;
-  margin: $sm-margin;
+  padding: $sm-margin;
   margin: 0 auto;
 }
 
@@ -41,4 +51,36 @@ $sm-margin: 5px;
 
 [class^='col-'] {
   padding: 0 $gutter/2;
+}
+
+@for $i from 1 through $sm-columns {
+  .col-sm-#{$i} {
+    width: percentage($i / $sm-columns);
+  }
+}
+
+@media screen and (min-width: $md-breakpoint) {
+  body {
+    max-width: $md-max-container;
+    padding: 0 $md-margin;
+
+    @for $i from 1 through $md-columns {
+      .col-sm-#{$i} {
+        width: percentage($i / $md-columns);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $lg-breakpoint) {
+  body {
+    max-width: $md-max-container;
+    padding: 0;
+
+    @for $i from 1 through $lg-columns {
+      .col-sm-#{$i} {
+        width: ($lg-unit * $gutter) * $i;
+      }
+    }
+  }
 }
