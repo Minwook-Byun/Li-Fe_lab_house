@@ -1,9 +1,6 @@
+@import './base/constants/colors';
 @import './base/fonts';
+@import './base/constants/typography';
 @import './base/reset';
 @import './base/normalize';
-
-p {
-  display: block;
-  color: green;
-  font-family: 'Noto Sans KR', sans-serif;
-}
+@import './layouts/grids';

@@ -20,5 +20,8 @@
   "homepage": "https://github.com/Minwook-Byun/Li-Fe_lab_house#readme",
   "dependencies": {
     "node-sass": "^6.0.1"
+  },
+  "devDependencies": {
+    "sass-lint": "^1.13.1"
   }
 }
